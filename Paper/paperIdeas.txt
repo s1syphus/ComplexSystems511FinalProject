@@ -1,0 +1,42 @@
+
+	Ideas for paper:
+
+To include:
+
+	1. Strongly connected Components
+		- Simple Wikipedia
+			- Pros:
+				- smaller size == faster analysis
+				- should be able to parse in time for paper
+			- Cons:
+				- Not full wikipedia, doesn't represent knowledge base as well 
+		- English Wikipedia
+			- Pros:
+				- Represents a huge amount of data/information
+				- End goal
+			- Cons:
+				- HUGE! will take a long time to run computations
+
+	2. Bradford-like law for link numbers
+		- Should be relatively easy to do with mysql link database
+		- Will be a good comparison to the strongly connected components data
+
+		- Simple Wikipedia
+		- English Wikipedia
+
+	3. Analyze both SCC and Bradford law analysis
+		- End goal trying to find the main "nodes" of wikipedia
+		- Compare and contrast
+			- Naive idea that the links at the top/bottom of Bradford analysis should related to the main "nodes"
+
+
+
+	4. Graphs/Pictures and stuff
+		- Do be decided on later
+
+	5. Further plans/extensions
+
+
+
+
+
