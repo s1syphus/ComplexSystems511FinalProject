@@ -36,7 +36,7 @@ Graph::Graph(int V){
 //A recursive function to print DFS starting from v
 void Graph::DFSUtil(int v, bool visited[]){
 	//Mark the current node as visited and print it
-	visited[V] = true;
+	visited[v] = true;
 	cout << v <<" ";
 	
 	//Recur for all the vertices adjacent to this vertex
@@ -61,7 +61,7 @@ Graph Graph::getTranspose(){
 	}
 
 void Graph::addEdge(int v, int w){
-	adj[v].push_Back(w); 	//add w to v's list
+	adj[v].push_back(w); 	//add w to v's list
 	}	
 
 void Graph::fillOrder(int v, bool visited[], stack<int> &Stack){
@@ -120,7 +120,14 @@ void Graph::printSCCs(){
 //Driver program to test the above functions
 int main(){
 
-	
+	Graph g(5);
+	g.addEdge(1,0);
+	g.addEdge(0,2);
+	g.addEdge(2,1);
+	g.addEdge(0,3);
+	g.addEdge(3,4);
+	cout<<"Following are the strongly connected compoents in given graph\n";
+	g.printSCCs();	
 
 	return 0;
 	}
