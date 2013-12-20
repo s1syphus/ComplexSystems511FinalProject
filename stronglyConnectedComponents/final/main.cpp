@@ -11,7 +11,7 @@ int main(){
 
 	string line;
 	//eventually change this to command line argument input
-	ifstream inputFile("outputFile");
+	ifstream inputFile("linkList");
 		vector<vector<int> > linkVector;
 		vector<int> tempVec;
 		size_t pos = 0;	
@@ -44,10 +44,6 @@ int main(){
 
 
 	cout<<"graph is populated\n";
-	
-	//remove the singular components
-
-	
 
 
 	cout<<"Following are the strongly connected components in given graph\n";
