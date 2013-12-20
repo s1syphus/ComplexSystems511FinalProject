@@ -9,12 +9,12 @@ using namespace std;
 using namespace rapidxml;
 
 
-int main(){
+int main(int argc, char* argv[]){
 
 	xml_document<> doc;
 	xml_node<> * root_node;
 //	ifstream theFile("example.hgw.xml");
-
+	ifstream theFile(argv[1]);
 	vector<char> buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
 	buffer.push_back('\0');
 	doc.parse<0>(&buffer[0]);
