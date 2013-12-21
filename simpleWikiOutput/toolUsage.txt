@@ -1,0 +1,25 @@
+
+How to use the tools starting with *.hgw.xml file created from wikiprep
+
+1. Use the parserUpdated to generate a file that only contains the link information
+
+	Ex: ./parserUpdated <your page here>.hgw.xml > parserOutput
+
+2. Use the sccUpdated to generate a list of the strongly-connected components
+from the link information
+
+	Ex: ./sccUpdated parserOutput > sccOutput
+
+3. Use the removeSingleUpdated to remove the strongly-connected components
+that only consist of solo nodes (not needed/interesting)
+	This step will generate several useful outputs including:
+		1. An updated strongly-connected components file that only
+contains components consisting of more than node nodes
+		2. A list of the size of the strongly-connected components
+
+	Ex: ./removeSingleUpdated sccOutput sccWithoutSingleOutput
+sccCountOutput
+
+
+
+

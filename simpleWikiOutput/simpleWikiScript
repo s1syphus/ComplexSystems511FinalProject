@@ -1,0 +1,5 @@
+
+./parserUpdated simplewiki-latest-pages-articles.hgw.xml > parserOutput
+./sccUpdated parserOutput > sccOutput
+./removeSingleUpdated sccOutput sccWithoutSingleOutput sccCountOutput
+
